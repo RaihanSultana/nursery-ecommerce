@@ -1,0 +1,12 @@
+/venv
+/env
+mysqlclient-1.3.13-cp37-cp37m-win32.whl
+/.idea
+__pycache__/
+*.py[cod]
+/Ecomvenv
+redis-5.0.7
+
+
+kinb
+db.sqlite3
