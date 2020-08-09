@@ -1,0 +1,63 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Sign Up!</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<div><h1>Sign Up!</h1></div>-->
+
+<!--<div>-->
+<!--    <form method="POST" action=".">-->
+
+<!--        {% if form.errors %}-->
+<!--        <div class="alert alert-danger">-->
+<!--            <strong>{{ form.errors }}</strong>-->
+<!--        </div>-->
+<!--        {% endif %}-->
+
+<!--        {% csrf_token %}-->
+<!--        Username: {{form.username}} <br/>-->
+<!--        Password: {{form.password}} <br/>-->
+<!--        Phone: {{form.phone}} <br/>-->
+<!--        Email: {{form.email}} <br/>-->
+<!--        Address: {{form.address}} <br/>-->
+<!--        <input type="submit" name="submit">-->
+<!--    </form>-->
+<!--</div>-->
+
+
+<!--</body>-->
+<!--</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up!</title>
+</head>
+<body>
+
+<div><h1>Sign Up!</h1></div>
+
+<div>
+    <form method="POST" action=".">
+
+        {% if form.errors %}
+        <div class="alert alert-danger">
+            <strong>{{ form.errors }}</strong>
+        </div>
+        {% endif %}
+
+        {% csrf_token %}
+        Phone: {{form.username}} <br/>
+        Password: {{form.password}} <br/>
+        <input type="submit" name="submit">
+    </form>
+</div>
+
+
+</body>
+</html>
